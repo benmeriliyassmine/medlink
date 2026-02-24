@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+medlink/
+ENV/
+.medlink/
+*.medlink
+.venv
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# Project specific
+secret.medlink
+*.bak
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+
+# Django migrations
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb
+jupyter/
