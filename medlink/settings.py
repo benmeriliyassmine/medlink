@@ -11,6 +11,10 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 """
 
 from pathlib import Path
+import psycopg2 as Database
+import socket
+hostname=socket.gethostname()
+local_ip=socket.gethostbyname(hostname)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +29,7 @@ SECRET_KEY = 'django-insecure-*j&#rr^2d(b507di6+%f6m$)tc_ev3t$t$1@0vq4^cewuwl31i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [local_ip]
 
 
 # Application definition
@@ -50,6 +54,15 @@ INSTALLED_APPS = [
     'nurse',
 
 ]
+JAZZMIN_SETTINGS={
+    "custom_css":"css/admin.css",
+    "site_title":"medLINK",
+    "site_header":"medLINK",
+    "site_brand":"medLINK",
+    "welcome_sign":"bienvenue sur medLINK",
+    "site_icon":"siteicon.ico",
+    "site_logo":"siteicon.ico"
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -86,8 +99,12 @@ WSGI_APPLICATION = 'medlink.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'hopital_local',
+        'USER': 'postgres',
+        'PASSWORD': 'MEDLINK2026',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
@@ -114,7 +131,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'fr-fr'
 
 TIME_ZONE = 'UTC'
 

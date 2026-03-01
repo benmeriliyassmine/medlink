@@ -1,0 +1,124 @@
+  
+
+
+.content-wrapper>.content{
+    background-color: #ffffff!important;
+}
+.mb-2{
+    background-color: blueviolet!important;
+}
+.card-header{
+    background-color: rgb(250, 250, 250)!important;
+}
+.card-body{
+    background-color: rgb(235, 235, 235)!important;
+}
+.btn-success{
+    background-color: #b76472;
+    border-width:0 ;
+    border-radius: 15PX;
+    padding: 10PX;
+}
+.btn-success:hover{
+    background-color: #fcf48f;
+}
+.btn-success:active{
+    background-color: #fff129!important;
+}
+.btn-info{
+    background-color: #c6a3a8;
+    border-width: 0;
+    border-radius: 15PX;
+    padding: 10PX;
+
+
+}
+.btn-info:hover{
+    background-color: #fcf48f;
+}
+.btn-info:active{
+    background-color: #fff129!important;   
+}
+.main-footer{
+    background-color: rgb(238, 238, 238)!important;
+}
+[class*=sidebar-dark-] {
+    background:linear-gradient(#fbc2c9, #aaccda)!important;
+}
+body{
+    font-family: Yu Gothic UI Semibold;
+}
+.btn-primary{
+    background-color: #3b6384!important;
+    border-width: 0!important;
+    border-radius: 20PX!important;
+
+
+}
+.btn-primary:hover{
+    background-color: #fff129!important;
+}
+.nav-link.active{
+    background-color: #a7bfd2!important;
+}
+a{
+    color: #370808!important;
+}
+a.btn-danger{
+    background-color: #b76472!important;
+    border-width: 0;
+    border-radius: 15PX;
+}
+.btn-danger{
+    background-color: #b76472!important;
+    border-width: 0;
+    border-radius: 15PX;
+}
+/*log in style*/
+
+
+
+
+
+
+
+
+.input-group>.form-control{
+    border-left: 0px!important;
+    border-top: 0PX!important;
+    border-right: 0PX!important;
+    
+    
+    
+    border-radius: 10PX 0 0 10PX !important;
+    
+    
+    font-family: Yu Gothic UI Semibold;
+    
+    color: rgb(0, 0, 0)!important;
+}
+.btn-block{
+    margin-top: 20PX;
+    float:right;
+    padding: 10PX;
+    
+    border-width: 0PX;
+    border-radius: 25PX;
+    background-color: #9f4e59!important;
+    
+    color: rgb(225, 225, 225);
+}
+.login-box-msg{
+    color: #000000;
+   font-family: Bahnschrift;
+}
+.input-group {
+   
+}
+.input-group-text{
+    background-color: #9f4e59!important;
+}
+.jazzmin-login-page{
+    background:linear-gradient(#9f4e59, #f0ff1e)!important;
+}
+

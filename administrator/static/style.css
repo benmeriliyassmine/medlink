@@ -1,0 +1,98 @@
+body{
+background-color:#fdffdd;
+}
+.bdt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0;
+    
+    border-radius: 100PX;
+
+}
+.db{
+background-color: #6D2932;
+padding: 50px;
+border-radius: 30PX;
+margin-left: 30PX;
+}
+.dbde{
+
+}
+
+input[type="text"],input[type="password"],input[type="email"] {
+   border-left: 0px;
+   border-top: 0PX;
+   border-right: 0PX;
+   padding: 12PX;
+   width: 300PX;
+   border-radius: 10PX;
+   margin-bottom: 12PX;
+   margin-top: 5PX;
+   font-family: Yu Gothic UI Semibold;
+   background-color: #b76472;
+   color: rgb(0, 0, 0);
+   
+   
+}
+input[type="date"]{
+    color: rgb(218, 222, 203);
+    border-left: 0px;
+    border-top: 0PX;
+    border-right: 0PX;
+    padding: 12PX;
+    width: 300PX;
+    border-radius: 10PX;
+    margin-bottom: 12PX;
+    margin-top: 5PX;
+    font-family: Yu Gothic UI Semibold;
+    background-color: #b76472;
+}
+input[type="text"]::placeholder,input[type="password"]::placeholder,input[type="date"]::placeholder,input[type="email"]::placeholder{
+color: rgb(218, 222, 203);
+}
+p{
+font-family:Yu Gothic UI Semibold;
+color: azure;
+
+}
+.dbh{
+
+} 
+h1{
+    margin-left: 30px; 
+    margin-bottom: 50PX;
+    color: rgb(251, 255, 7);
+    font-family: Bahnschrift;
+}
+.titre{
+    color: #d7d4d4;
+    margin-top: 20PX;
+    
+}
+button{
+    margin-top: 20PX;
+    float:right;
+    padding: 15PX;
+    width: 150PX;
+    border-width: 0PX;
+    border-radius: 25PX;
+    background-color: #fcf48f;
+    font-family: Bahnschrift;
+}
+button:hover{
+    background-color: #fffddf;
+}
+button:active{
+    background-color: #cac57d;
+}
+.error{
+    border-left: 5PX solid rgb(251, 255, 7);
+    border-radius: 0 10PX 10PX 0;
+    
+    background-color: rgba(255, 0, 85, 0.23);
+}
+.error_padding{
+    padding: 20px;
+}
