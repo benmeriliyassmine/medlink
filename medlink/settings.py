@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     # project apps
-    'accounts',
+    'administrator',
     'core',
     'patients',
     'samples',
@@ -59,8 +59,8 @@ JAZZMIN_SETTINGS={
     "site_header":"medLINK",
     "site_brand":"medLINK",
     "welcome_sign":"bienvenue sur medLINK",
-    "site_icon":"siteicon.ico",
-    "site_logo":"siteicon.ico"
+    #"site_icon":"",
+    #"site_logo":""
 }
 
 MIDDLEWARE = [
@@ -145,7 +145,8 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 
-AUTH_USER_MODEL = 'accounts.User'
+AUTH_USER_MODEL = 'administrator.User'
+
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'dashboard'
 LOGOUT_REDIRECT_URL = 'login'
