@@ -122,3 +122,8 @@ a.btn-danger{
     background:linear-gradient(#9f4e59, #f0ff1e)!important;
 }
 
+@media (min-width: 768px) {
+    .col-md-6 {
+        max-width: 100%!important;
+    }
+}

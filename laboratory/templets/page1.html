@@ -1,0 +1,94 @@
+
+<div class="dashboard">
+    <div class="app-header">
+        <h1>
+            medLINK
+            <span>Laboratoire</span>
+        </h1>
+    </div>
+
+
+    <div class="main-layout">
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3>Applications</h3>
+                <ul class="sidebar-nav">
+                    <li><a href="#" class="active">Analyse actuelle</a></li>
+                    <li><a href="#">Toutes les analyses</a></li>
+                    <li><a href="#">Remarques</a></li>
+                    <li><a href="#">Statistiques</a></li>
+                    <li><a href="#">Message</a></li>
+                    <li><a href="#">Prendre rendez-vous</a></li>
+                </ul>
+            </div>
+            
+            
+            
+        </aside>
+
+
+        <main class="content-area">
+            <div class="courses-header">
+                <h2>Les analyses</h2>
+                <div class="filter-group">
+                    <span class="filter-label">Classe par:</span>
+                    <span class="filter-btn">Le medecin</span>
+                    <span class="filter-btn">Type</span>
+                    <span class="filter-btn">Dépertement</span>
+                    
+                </div>
+            </div>
+
+
+            <div class="course-grid">
+                {% if my_lab_tests %}
+                <div class="course-card">
+                    {% for test in my_lab_tests %}
+                    <h3>{{ اسم المريض تديه من قاعدة البيانات }}</h3>
+                    <p>{{ تحاليل كامل نتاع هذا المريض }}</p>
+                    <div class="creator">Requis par:{{اسم التبيب}}</div>
+                </div>
+                {% endfor %}
+            </div>
+
+
+            <div class="bottom-panel">
+                <div class="calendar-card">
+                    <h3 id="monthYear"></h3>
+                    <table class="calendar-table" id="calendar">
+                        <thead>
+                            <tr>
+                                <th>lun</th>
+                                <th>mar</th>
+                                <th>mer</th>
+                                <th>jeu</th>
+                                <th>ven</th>
+                                <th>sam</th>
+                                <th>dim</th>
+                            </tr>
+                        </thead>
+                        <tbody id="calendarBody">
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div class="online-card">
+                    <div class="online-header">
+                        <h3>Utilisateurs en ligne</h3>
+                    </div>
+                    <ul class="user-list">
+                        {% for test in my_lab_tests %}
+                        <li><a href="#" class="user-name">{{nom et prenom}}</span> <span class="user-id">{{id util}}</a></li>
+                    {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div style="padding: 8px 32px 16px; border-top: 1px solid #f0f5fa; font-size: 13px; color: #b8d0e0; display: flex; justify-content: space-between;">
+        <span>📌 medLINK 1.0.0</span>
+        
+    </div>
+</div>

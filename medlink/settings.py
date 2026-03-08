@@ -35,7 +35,7 @@ ALLOWED_HOSTS = [local_ip]
 # Application definition
 
 INSTALLED_APPS = [
-        'jazzmin',
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -48,7 +48,6 @@ INSTALLED_APPS = [
     'core',
     'patients',
     'samples',
-    'administrator',
     'laboratory',
     'doctor',
     'nurse',
@@ -100,7 +99,7 @@ WSGI_APPLICATION = 'medlink.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'hopital_local',
+        'NAME': 'med',
         'USER': 'postgres',
         'PASSWORD': 'MEDLINK2026',
         'HOST': 'localhost',
